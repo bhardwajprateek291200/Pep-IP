@@ -22,7 +22,7 @@ int func(int arr[], int n) {
 	for (int cnt = 2; cnt < n; cnt++) {
 		for (int i = 0; i < n - cnt; i++) {
 			dp[i][i + cnt] = max(arr[i] + min(dp[i + 2][i + cnt], dp[i + 1][i + cnt - 1]),
-			                     arr[i + cnt] + min(dp[i + 1][i + cnt], dp[i][i + cnt - 2]));
+			                     arr[i + cnt] + min(dp[i + 1][i + cnt - 1], dp[i][i + cnt - 2]));
 			// taking that we took max  of first or last and correspond another player try to choose first and last in such way to
 			// provide us minima
 		}
