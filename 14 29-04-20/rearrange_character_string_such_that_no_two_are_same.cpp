@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// it can be used to k adjacent are not same
+
 bool func(string s) {
 	int n = s.length();
 	if (n <= 1)
